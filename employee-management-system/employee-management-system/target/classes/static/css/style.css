@@ -1,0 +1,138 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    color: #243b55;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background: #243b55;
+    color: white;
+}
+
+tr:hover {
+    background: #f5f8fc;
+}
+
+.btn, .edit-btn, .delete-btn, .cancel-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn {
+    background: #2563eb;
+    color: white;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.edit-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.delete-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.cancel-btn {
+    background: #64748b;
+    color: white;
+    margin-left: 8px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.error {
+    display: block;
+    color: #dc2626;
+    margin-top: 5px;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.inline-form button {
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 750px;
+    }
+}
